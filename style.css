@@ -1,0 +1,1022 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+.menu li a:hover
+{
+   color: red;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 50px ;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+header.sticky
+{
+    background-color: rgba(255, 255, 255, 1);
+}
+header:hover
+{
+    background-color: rgba(255, 255, 255, 1);
+}
+.logo img
+{
+    margin-top: -5px;
+    max-height: 60px;
+}
+.other li img
+{
+   max-height: 30px;
+}
+.other li input
+{
+   
+   font-size: 20px;
+}
+.menu
+{
+    flex:3;
+    display: flex;
+}
+.sub-menu
+{
+    position: absolute;
+    width: 180px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 20px;               
+    visibility: hidden;
+    top:50px;
+    transition: 0.3s;
+    z-index: 1  ;
+    background-color: #fff;
+    margin-top: 25px;
+}
+.menu >li:hover .sub-menu
+{
+    visibility: visible;
+    top:30px;
+}
+.menu >li
+{
+    padding: 22px 12px ;
+    position: relative;
+
+}
+.menu li a
+{
+   padding-left: 10px;
+   padding-right: 30px;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    line-height: 35px;
+    color: #000;
+}
+.other
+{
+    flex:1;
+    display: flex;
+}
+.other > li
+{
+    padding: 0 12px ;
+    position: relative;
+}
+.other > li::after
+{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background: #CCCCCC;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.other > li:last-child::after{
+    display: none;
+}
+#fb
+{
+    float:right;
+    margin-top: 5px;
+}
+#you
+{
+    float:right;
+    margin-top: 7px;
+}
+#timkiem
+{
+    float:right;
+    margin-right: 12px;
+    margin-top: 15px;
+}
+#iconTim
+{
+    float:right;
+    margin-top: 5px;
+}
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    transition: 0.3s;
+  }
+  
+  .aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  /*-------------app--------------------------------*/
+  .app-container
+  {
+    text-align: center;
+    align-items: center;
+    padding: 150px 0 50px 0;
+    font-size: 70px;
+  }
+  .app-google
+  {
+    margin: 50px;
+
+  }
+  .app-google img
+  {
+    height: 50px;
+  }
+  .app-container p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+  }
+  .app-container input{
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    width: 400px;
+    text-align: center;
+    outline: none;
+  }
+ /*-------------------------------footer--------------------------------*/
+ footer
+ {
+    text-align: center;
+
+ }
+ .footer-top
+ {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 70px;
+ }
+ .footer-top img{
+    height: 50px;
+ }
+ .footer-top li 
+ {
+    padding: 0 12px ;
+    position: relative;
+ }
+ .footer-top li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background: #CCCCCC;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+ }
+ .footer-top li:last-child::after
+ {
+    display: none;
+ }
+ .footer-center
+ {
+    text-align: center;
+ }
+ .footer-bottom
+ {
+    text-align: center;
+    margin-top: 20px;
+ }
+ .row
+ {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ /*----------------------------- baiviet -----------------------------*/
+ #anhbia_trangbaiviet
+ {
+   width: 1800px;
+   margin-left: 50px;
+   margin-bottom: 50px;
+   height: 400px;
+ }
+ .category
+ {
+    padding: 100px 0 0;
+
+ }
+ .category-top
+ {
+    margin-bottom:50px ;
+ }
+ .category-top p
+ {
+   margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 12px;
+    font-size: 20px;
+ }
+ .category-left
+ {
+    width: 20%;
+
+ }
+ .category-right
+ {
+    width: 80%;
+ }
+ .category-right-top-item:first-child
+ {
+    flex:2;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+ }
+ .category-right-top-item
+ {
+    flex:1;
+    padding: 0 18px;
+
+ }
+ .category-right-top-item p
+ {
+    margin-left: 35px;
+    font-size: 25px;
+
+ }
+ .category-right-top-item button{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color:#ffff;
+    border:1px solid #dddddd;
+    cursor: pointer;
+ }
+ .category-right-top-item select
+ {
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color:#ffff;
+    border:1px solid #dddddd;
+    cursor: pointer;
+ }
+ .category-right-content
+ {
+    margin-top: 20px;
+    justify-content: space-between;
+
+ }
+ .category-right-content-item
+ {
+    width: calc(30% - 12px);
+    text-align: center;
+    padding: 12px 0;
+
+ }
+ .category-right-content-item1 img
+ {
+
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 30px;
+    
+ }
+ .category-right-content-item1 h1
+ {
+   margin-left: 50px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+    color:#333333;
+
+ }
+ .category-right-content-item1 h2{
+   margin-top: 12px;
+   margin-left: 50px;
+   font-size: 17px;
+
+ }
+ .category-right-content-item2 img
+ {
+   height: 270px ;
+   margin-top: 20px;
+   margin-right: 30px;
+ }
+ .category-right-content-item2 h1{
+
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+    color:#333333;
+ }
+ .category-right-content-item2 h2{
+   margin-top: 12px;
+   font-size: 17px;
+
+ }
+ 
+
+ .category-right-content-item3 img
+ {
+   height: 270px ;
+   margin-top: 20px;
+ }
+ .category-right-content-item3 h1{
+
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+    color:#333333;
+ }
+ .category-right-content-item3 h2{
+   margin-top: 12px;
+   font-size: 17px;
+
+ }
+ .category-right-content-item4 img
+ {
+   height: 270px ;
+   margin-top: 20px;
+ }
+ .category-right-content-item3 h1{
+
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+    color:#333333;
+ }
+ .category-right-content-item3 h2{
+   margin-top: 12px;
+   font-size: 17px;
+
+ }
+#anhbia_trangbaiviet2
+{
+   margin-left: 50px;
+   margin-top: 50px;
+}
+
+
+
+
+ .category-right-content-item img{
+   margin-left: 46px;
+   width: 100%;
+ }
+
+ .category-right-content-item p 
+ {
+    font-size: 20px;
+ }
+
+ .category-right-bottom p
+ {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+ }
+ .category-left ul li
+ {
+   margin-left: 50px;
+    padding: 12px ;
+
+ }
+ .category-left ul li>a
+ {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .category-left ul li ul li
+ {
+    padding-left: 10px;
+
+ }
+ .category-left ul li ul
+ {
+    display: none;
+ }
+ .category-left-li.block ul
+ {
+    display: block;
+ }
+ .category-left ul li ul li a
+ {
+    color:#333333;
+    font-size: 15px;
+ }
+  /*----------------------------- menu giua trang bai viet -----------------------------*/
+  .menu_giuatrang_baiviet nav ul li
+  {
+   margin-top: 50px;
+   margin-left: 35px;
+   list-style: none;
+   float:left;
+   padding: 10px 20px;
+   color: #000;
+   font-size: 20px;
+  }
+  .menu_giuatrang_baiviet nav ul li:hover
+  {
+   color: rgb(36, 141, 246);
+   border-bottom: 2px solid  rgb(34, 198, 239)
+  }
+    /*----------------------------- bai viet giua trang bai viet -----------------------------*/
+   .baiviet_giuatrang
+   {
+      margin-top: 50px;
+      display: flex;
+   }
+   #hinh1
+   {
+      margin-left: 50px;
+   }
+   .noidung_mota
+   {
+      margin-left: 30px;
+      
+      
+   }
+   .tenChuDe
+   {
+      margin-bottom: 50px;
+      font-size: 25px;
+      font-family: 'Times New Roman', Times, serif;
+   }
+  .tieuDe
+  {
+      font-size: 27px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      margin-bottom: 30px;
+  }
+  .noiDungDemo
+  {
+      font-size: 25px;
+      margin-bottom: 25px;
+  }
+  .hinhAnhTacGia img
+  {
+   max-width: 80px;
+   border-radius:20%;
+   -moz-border-radius:10%;
+      -webkit-border-radius:50%;
+      margin-bottom: 10px;
+  }
+   .tacGia
+   {
+      font-size: 20px;
+   }
+   .listPage
+   {
+      margin-top: 50px;
+      padding: 10px;
+      text-align: center;
+      list-style: none;
+   }
+   .listPage li
+   {
+      background-color: #ef422b;
+      padding: 20px;
+      display: inline-block;
+      margin: 0 10px;
+      cursor: pointer;
+   }
+   .listPage .active
+   {
+      background-color: #2b7bf3;
+      color: #fff;
+   }
+ /*----------------------------- product -----------------------------*/
+ .product
+ {
+    padding: 100px 0;
+    margin-left: 100px;
+ }
+ .product-top
+ {
+    margin-bottom: 30px;
+
+ }
+ .product-top p
+ {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 12px;
+    font-size: 15px;
+ }
+ .product-content-left
+ {
+    width: 50%;
+ }
+ .product-content-left-big-img
+ {
+    width: 80%;
+    padding-right: 20px;
+ }
+ .product-content-left-big-img img
+ {
+    width: 100%;
+ }
+ .product-content-left-small-img
+ {
+    width: 20%;
+ } .product-content-left-small-img img
+ {
+    width: 100% ;
+    cursor: pointer;
+    margin-bottom: 70px;
+ }
+ .product-content-right
+ {
+    width: 50%;
+    padding-left: 20px;
+ }
+ .product-content-right-product-name h1
+ {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+
+ }
+ .product-content-right-product-name p
+ {
+    color: #cccccc;
+    font-size: 20px;
+ }
+ .product-content-right-product-price
+ {
+    margin:20px 0;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .product-content-right-product-chieuCao
+ {
+    margin:20px 0;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .product-content-right-product-canNang
+ {
+    margin:20px 0;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .product-content-right-product-chatLieu
+ {
+    margin:20px 0;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .product-content-right-product-tinhTrang
+ {
+    margin:20px 0;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .product-content-right-product-mucDich
+ {
+    margin:20px 0;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .product-content-right-product-kieuGiao
+ {
+    margin:20px 0;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .product-content-right-product-tenHang
+ {
+    margin:20px 0;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .product-content-right-product-button button
+ {
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 20px 0 12px;
+    transition: all 0.3s ease;
+ }
+ #p1{
+    margin-left: 40px;
+ }
+ .product-content-right-product-button button:first-child
+ {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffff;
+        border: 2px solid black;
+        cursor: pointer;
+ }
+ .product-content-right-product-button button:first-child:hover{
+    background-color: black;
+    color: #ffff;
+ }
+ .product-content-right-product-button button:last-child
+ {
+    border: 2px solid #BF8A49;
+    color: #BF8A49;
+    background-color: #ffff;
+    cursor: pointer;
+ }
+ .product-content-right-product-icon
+ {
+    display: flex;
+ }
+ .product-content-right-product-icon-item
+ {
+    display: flex;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: centers;
+    cursor: pointer;
+ }
+ .product-content-right-product-icon-item i
+ {
+    font-size: 60px;
+    margin-right: 6px;
+ }
+
+/*--------------------product---------------------*/
+.product-related
+{
+   margin-bottom: 50px;
+
+}
+.product-related-tittle
+{
+   margin: 20px 0;
+}
+.product-related-tittle p
+{
+   margin-left: 40px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+   font-weight: bold;
+   color: #333333;
+}
+.product-related-item
+{
+   width: 20%;
+   text-align: center;
+   padding: 0 6px;
+   
+}
+.product-related-item img
+{
+   min-width: 200px;
+   max-width: 300px;
+}
+.product-related-item h1
+{
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #333333;
+   margin-top: 6px;
+}
+.product-related-item p
+{
+   font-size: 15px;
+}
+/*-------------------------------cart---------------------*/
+
+.cart
+{
+   padding: 100px 0;
+}
+.cart-content-left
+{
+   flex: 2;
+   padding-right: 12px;
+
+}
+.cart-content-left table
+{
+   width: 100%;
+   text-align: center;
+
+}
+.cart-content-left table th
+{
+   padding-bottom: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   text-transform: uppercase;
+   color: #333;
+   border-collapse: collapse;
+   border-bottom: 2px solid #dddddd;
+}
+.cart-content-left table p
+{
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #333;
+}
+.cart-content-left table input
+{
+   width: 30px;
+}
+.cart-content-left table span
+{
+   margin-right: -10px;
+   display: block;
+   width: 20px;
+   height: 20px;
+   border: 1px solid #dddddd;
+   cursor: pointer;
+}
+.cart-content-left table td
+{
+   padding: 20px 0;
+   border-bottom: 2px solid #dddddd;
+}
+.cart-content-left td:first-child img 
+{
+   width: 130px;
+}
+.cart-content-left td:nth-child(2)
+{
+      max-width: 130px;
+}
+.cart-content-left td:nth-child(3)
+{
+   max-width: 30px;
+}
+.cart-content-right
+{ 
+   margin-right: 50px;
+   flex: 1;
+   padding-left: 12px;
+   border-left: 2px solid #dddddd;
+}
+.cart-content-right table
+{
+   width: 100%;
+
+}
+.cart-content-right table th{
+   padding-bottom:70px ;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 30px;
+   color: #333;
+   border-collapse:collapse ;
+   border-bottom: 2px solid #dddddd;
+}
+.cart-content-right table td{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+   color: #333;
+   padding: 6px 0;
+}
+.cart-content-right tr:nth-child(4) td
+{
+   border-bottom: 2px solid #dddddd;
+}
+.cart-content-right tr td:last-child
+{
+   text-align: right;
+}
+.cart-content-right-text
+{
+   margin: 20px 0 ;
+   text-align: center;
+}
+.cart-content-right-text p
+{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+   color: #333;
+   
+}
+.cart-content-right-button
+{
+   text-align: center;
+   align-items: center;
+}
+.cart-content-right-button button
+{
+   padding: 0 18px;
+   height: 35px;
+   cursor: pointer;
+}
+.cart-content-right-button button:first-child
+{
+   background-color: white;
+   border: 1px solid #000;
+   margin-right: 20px;
+}
+.cart-content-right-button button:first-child:hover
+{
+   background-color: #ddd;
+}
+.cart-content-right-button button:last-child
+{
+   background-color: #000;
+   color: white;
+   border: none;
+   border: 1px solid black;
+}
+.cart-content-right-button button:last-child:hover{
+   background-color: #dddddd;
+   color: black;
+}
+.cart-content-right-login
+{
+   margin-top: 20px;
+}
+.cart-content-right-login p
+{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+   color: #333;
+   
+}
+/*-------------------------------cam-nang---------------------*/
+.hinhAnhTacGia2 img
+{
+   margin-top: 20px;
+   margin-left: 300px;
+   max-width: 80px;
+   border-radius:20%;
+   -moz-border-radius:10%;
+      -webkit-border-radius:50%;
+      margin-bottom: 10px;
+}
+.camnang
+{
+   padding: 100px 0;
+}
+.camnang p
+{
+   font-size: 20px;
+   margin: 20px 300px;
+   text-align: justify;
+   line-height: 35px;
+}
+.camnang #tieude
+{
+   font-size: 50px;
+   color: rgb(124, 121, 121);
+}
+#anh_minh_hoa1
+{
+   width: 500px;
+   margin-left: 600px;
+}
+#anh_minh_hoa2
+{
+   margin-left: 400px;
+}
+#anhbia_gioithieu
+{
+   margin-left: 300px;
+}
+#tieude_lon
+{
+   font-size: 40px;
+   margin: 20px 300px;
+   text-align: justify;
+   line-height: 35px;
+}
+/*-------------------------------payment---------------------*/
+.payment
+{
+   margin: 0 300px;
+   padding: 100px 0;
+
+}
+.payment-content-left
+{
+   width: 60%;
+}
+.payment-content-right
+{
+   margin-top: 70px;
+   width: 40%;
+   border-left:2px solid #ddd ;
+   padding-left: 18px;
+}
+.payment-content-left p,label
+{
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.payment-content-right-button 
+{
+   display: flex;
+   padding: 12px 0;
+   border-radius: 1px dashed #dddddd;
+}
+.payment-content-right-button input
+{
+   height: 30px;
+   width: 200px;
+   margin-right: 100px;
+   padding-left: 12px;
+}
+.payment-content-right-button button
+{
+   height: 30px;
+   width: 100px;
+   background-color: black;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+.payment-content-right-mnv
+{
+   margin-top: 20px;
+}
+.payment-content-right-mnv select
+{
+   height: 30px;
+   width: 100%;
+   color: #75758A;
+   padding-left: 12px;
+}
+.payment-content-righ-payment
+{
+   margin-top: 50px;
+   align-items: center;
+   text-align: center;
+}
+.payment-content-righ-payment button
+{
+   height: 35px;
+   padding: 0 20px;
+   font-size: 20px;
+   color: black;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   border: 2px solid black;
+}
+.payment-content-righ-payment button:hover
+{
+   background-color: black;
+   color: #fff;
+}
+/*-------------------------------gioi thieu---------------------*/
+.hinhanh1_baiviet
+{
+   margin-left: 40px;
+   max-width: 2000px;
+}
